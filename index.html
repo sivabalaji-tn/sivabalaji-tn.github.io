@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siva Balaji S — Frontier Developer | RDR2 Portfolio</title>
+  <meta name="description" content="Portfolio of Siva Balaji S — IT undergraduate and full-stack developer skilled in PHP, MySQL, JavaScript and modern web technologies. Red Dead Redemption 2 themed." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cinzel+Decorative:wght@400;700&family=IM+Fell+English:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <!-- Font Awesome 6 Free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="cursor-glow"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">&#10022; S&middot;B&middot;S &#10022;</a>
+      <ul class="nav-links">
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#skills"       class="nav-link">Skills</a></li>
+        <li><a href="#projects"     class="nav-link">Missions</a></li>
+        <li><a href="#education"    class="nav-link">Journey</a></li>
+        <li><a href="#certificates" class="nav-link">Honors</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+        <li><a href="resume/Siva_Balaji_S_Resume.pdf" download class="rdr-btn nav-btn"><span><i class="fa-solid fa-file-arrow-down"></i> Resume</span></a></li>
+      </ul>
+      <button id="mobileMenuBtn" class="mobile-btn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu hidden">
+      <a href="#about"        onclick="closeMobileMenu()">About</a>
+      <a href="#skills"       onclick="closeMobileMenu()">Skills</a>
+      <a href="#projects"     onclick="closeMobileMenu()">Missions</a>
+      <a href="#education"    onclick="closeMobileMenu()">Journey</a>
+      <a href="#certificates" onclick="closeMobileMenu()">Honors</a>
+      <a href="#contact"      onclick="closeMobileMenu()">Contact</a>
+      <a href="resume/Siva_Balaji_S_Resume.pdf" download class="rdr-btn"><span><i class="fa-solid fa-file-arrow-down"></i> Resume</span></a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="assets/rdr2_hero_bg.jpg" alt="Western Frontier" id="heroImg" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-vignette"></div>
+    <div id="starField" class="star-field"></div>
+    <div id="campfireParticles" class="campfire-particles"></div>
+    <div class="hero-content">
+      <div class="badge-float">
+        <img src="assets/rdr2_badge.jpg" alt="Badge" class="hero-badge" />
+      </div>
+      <div class="wanted-poster hero-poster">
+        <p class="poster-sub">~ Frontier Developer ~</p>
+        <div class="rdr-divider"><span>&#10022;</span></div>
+        <h1 class="poster-name">SIVA BALAJI S</h1>
+        <div class="rdr-divider"><span>&#10022;</span></div>
+        <p class="poster-quote">"A man who builds his own destiny with code and conviction"</p>
+      </div>
+      <p class="hero-role">&#8212; Information Technology &middot; Full Stack Developer &#8212;</p>
+      <p class="hero-tech">PHP &middot; MySQL &middot; JavaScript &middot; Cloud Engineering</p>
+      <div class="hero-btns">
+        <a href="#projects" class="rdr-btn"><span><i class="fa-solid fa-crosshairs"></i> View Missions</span></a>
+        <a href="resume/Siva_Balaji_S_Resume.pdf" download class="rdr-btn rdr-btn-red"><span><i class="fa-solid fa-file-arrow-down"></i> Download Resume</span></a>
+      </div>
+      <div class="scroll-indicator">
+        <span class="scroll-text">RIDE ON</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-bg-texture"><img src="assets/rdr2_wanted_texture.jpg" alt="" /></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">&#8212; The Outlaw's Tale &#8212;</p>
+        <h2 class="section-title">About the Rider</h2>
+        <div class="rdr-divider short"><span>&#10022;</span></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar reveal">
+          <div class="avatar-ring-outer">
+            <div class="avatar-ring-inner">
+              <img src="assets/rdr2_badge.jpg" alt="Siva Balaji S" class="avatar-img" />
+            </div>
+            <span class="avatar-star top"><i class="fa-solid fa-star"></i></span>
+            <span class="avatar-star bottom"><i class="fa-solid fa-star"></i></span>
+            <span class="avatar-star left"><i class="fa-solid fa-star"></i></span>
+            <span class="avatar-star right"><i class="fa-solid fa-star"></i></span>
+          </div>
+          <div class="rdr-card about-info-card">
+            <p class="info-name">Siva Balaji S</p>
+            <p class="info-location">Vadugapatti, Theni, India</p>
+            <div class="info-details">
+              <p><i class="fa-solid fa-location-dot info-icon"></i> Theni &#8211; 625603</p>
+              <p><i class="fa-solid fa-phone info-icon"></i> +91 7904538655</p>
+              <p><i class="fa-solid fa-envelope info-icon"></i> sivathetechie24@gmail.com</p>
+            </div>
+            <div class="info-links">
+              <a href="https://linkedin.com/in/sivabalajison" target="_blank" class="info-link"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/sivabalaiji-tn"    target="_blank" class="info-link"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="reveal delay-1">
+          <div class="rdr-card rdr-card--corner p-8">
+            <p class="card-label">The Dossier</p>
+            <div class="rdr-divider"><span>&#10022;</span></div>
+            <p class="bio-quote">"An Information Technology outlaw, riding the frontier of modern web development. Skilled in building real-time applications, taming multi-tenant systems, and blazing trails through cloud infrastructure."</p>
+            <p class="bio-text">IT undergraduate with hands-on experience in <strong>PHP, MySQL, JavaScript</strong> and backend web development. Built real-time Bus Tracking and multi-tenant e-commerce applications. Familiar with <strong>AWS, Docker, Git</strong> and modern web technologies.</p>
+            <p class="bio-text mt-4">Seeking software development and cloud engineering opportunities to apply problem-solving and development skills across the vast frontier of technology.</p>
+            <div class="trait-grid">
+              <div class="trait-item">
+                <div class="trait-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <p class="trait-label">Problem<br/>Solver</p>
+              </div>
+              <div class="trait-item">
+                <div class="trait-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <p class="trait-label">Quick<br/>Learner</p>
+              </div>
+              <div class="trait-item">
+                <div class="trait-icon"><i class="fa-solid fa-binoculars"></i></div>
+                <p class="trait-label">Curious<br/>Thinker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section--dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">&#8212; The Gunslinger's Arsenal &#8212;</p>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="rdr-divider short"><span>&#10022;</span></div>
+      </div>
+      <div class="skills-grid">
+        <div class="rdr-card rdr-card--corner p-8 reveal">
+          <h3 class="card-label flex-icon"><i class="fa-solid fa-code"></i> Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item" data-pct="90"><div class="skill-header"><span>HTML / CSS</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"></div></div></div>
+            <div class="skill-item" data-pct="85"><div class="skill-header"><span>JavaScript</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"></div></div></div>
+            <div class="skill-item" data-pct="88"><div class="skill-header"><span>PHP</span><span>88%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"></div></div></div>
+            <div class="skill-item" data-pct="82"><div class="skill-header"><span>SQL / MySQL</span><span>82%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"></div></div></div>
+            <div class="skill-item" data-pct="65"><div class="skill-header"><span>Java</span><span>65%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"></div></div></div>
+          </div>
+        </div>
+        <div class="rdr-card rdr-card--corner p-8 reveal delay-1">
+          <h3 class="card-label flex-icon"><i class="fa-solid fa-screwdriver-wrench"></i> Tools &amp; Frameworks</h3>
+          <div class="skill-list">
+            <div class="skill-item" data-pct="88"><div class="skill-header"><span>VS Code / XAMPP</span><span>88%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"></div></div></div>
+            <div class="skill-item" data-pct="85"><div class="skill-header"><span>Git / GitHub</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"></div></div></div>
+            <div class="skill-item" data-pct="80"><div class="skill-header"><span>Bootstrap / AJAX</span><span>80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"></div></div></div>
+            <div class="skill-item" data-pct="70"><div class="skill-header"><span>Docker</span><span>70%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"></div></div></div>
+            <div class="skill-item" data-pct="60"><div class="skill-header"><span>AWS / Azure</span><span>60%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"></div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="rdr-card p-8 mt-8 reveal">
+        <h3 class="card-label text-center mb-6"><i class="fa-solid fa-bolt"></i> Mastered Technologies</h3>
+        <div id="techBadges" class="tech-badges"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section--sepia">
+    <div class="section-bg-texture"><img src="assets/rdr2_wanted_texture.jpg" alt="" /></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">&#8212; Completed Quests &#8212;</p>
+        <h2 class="section-title">Missions</h2>
+        <div class="rdr-divider short"><span>&#10022;</span></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="rdr-card rdr-card--corner project-card reveal" id="project-stm">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-bus"></i></div>
+            <span class="project-date">Apr 2025</span>
+          </div>
+          <h3 class="project-title">Smart Transit Manager</h3>
+          <div class="rdr-divider"><span>&#10022;</span></div>
+          <p class="project-desc">Real-time Bus Tracking System using mobile GPS integration and OpenStreetMap. Live location updates, route tracking, and stop logging via CRUD operations in PHP &amp; MySQL. Enables mobile devices to seamlessly transmit GPS data for public transit.</p>
+          <div class="tech-tags"><span class="tech-tag">PHP</span><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">MySQL</span><span class="tech-tag">GPS API</span><span class="tech-tag">OpenStreetMap</span></div>
+          <div class="project-stats">
+            <div class="stat-item"><p class="stat-icon"><i class="fa-solid fa-satellite-dish"></i></p><p class="stat-label">Real-Time</p></div>
+            <div class="stat-item"><p class="stat-icon"><i class="fa-solid fa-map-location-dot"></i></p><p class="stat-label">Live Maps</p></div>
+            <div class="stat-item"><p class="stat-icon"><i class="fa-solid fa-mobile-screen"></i></p><p class="stat-label">Mobile GPS</p></div>
+          </div>
+        </div>
+
+        <div class="rdr-card rdr-card--corner project-card reveal delay-1" id="project-tamizhmart">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-store"></i></div>
+            <span class="project-date">Sep 2025</span>
+          </div>
+          <h3 class="project-title">Project Tamizhmart</h3>
+          <div class="rdr-divider"><span>&#10022;</span></div>
+          <p class="project-desc">Multi-tenant E-Commerce platform with per-shop storefronts, owner dashboards and a super admin panel. Razorpay payments, automated WhatsApp &amp; email notifications. Empowering Tamil Nadu shop owners to launch fully branded online stores.</p>
+          <div class="tech-tags"><span class="tech-tag">PHP</span><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">MySQL</span><span class="tech-tag">Razorpay</span><span class="tech-tag">PWA</span></div>
+          <div class="project-stats">
+            <div class="stat-item"><p class="stat-icon"><i class="fa-solid fa-shop"></i></p><p class="stat-label">Multi-Tenant</p></div>
+            <div class="stat-item"><p class="stat-icon"><i class="fa-solid fa-credit-card"></i></p><p class="stat-label">Payments</p></div>
+            <div class="stat-item"><p class="stat-icon"><i class="fa-brands fa-whatsapp"></i></p><p class="stat-label">WhatsApp</p></div>
+          </div>
+        </div>
+
+        <div class="rdr-card rdr-card--corner project-card reveal delay-2" id="project-genai">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-microchip"></i></div>
+            <span class="project-date">Oct 2024</span>
+          </div>
+          <h3 class="project-title">Generative AI</h3>
+          <div class="rdr-divider"><span>&#10022;</span></div>
+          <p class="project-desc">Completed Google Developer Groups on Campus Generative AI program. Earned 35+ skill badges by completing arcade quests on Qwiklabs, demonstrating hands-on proficiency with modern AI tooling and Google Cloud platforms.</p>
+          <div class="tech-tags"><span class="tech-tag">Generative AI</span><span class="tech-tag">Google Cloud</span><span class="tech-tag">Qwiklabs</span><span class="tech-tag">35+ Badges</span></div>
+          <div class="project-footer"><p><i class="fa-brands fa-google" style="margin-right:6px"></i>Google Developer Groups on Campus</p></div>
+        </div>
+
+        <div class="rdr-card rdr-card--corner project-card reveal delay-3" id="project-sql">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-database"></i></div>
+            <span class="project-date">Nov 2024</span>
+          </div>
+          <h3 class="project-title">SQL Data Analytics</h3>
+          <div class="rdr-divider"><span>&#10022;</span></div>
+          <p class="project-desc">Completed a 3-month intensive course on SQL Data Analytics at TN Computer Institution, Theni. Received hands-on training in database management, data integrity and secured <strong>80% with Distinction</strong>.</p>
+          <div class="tech-tags"><span class="tech-tag">SQL</span><span class="tech-tag">Database</span><span class="tech-tag">Data Analytics</span><span class="tech-tag">Distinction</span></div>
+          <div class="project-footer"><p><i class="fa-solid fa-building-columns" style="margin-right:6px"></i>TN Computer Institution, Theni</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section section--darker">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">&#8212; The Rider's Journey &#8212;</p>
+        <h2 class="section-title">Education</h2>
+        <div class="rdr-divider short"><span>&#10022;</span></div>
+      </div>
+      <div class="edu-layout reveal">
+        <div class="edu-left">
+          <p class="edu-dates">Sep 2023 &#8212; May 2027</p>
+          <p class="edu-location">Perundurai, Erode</p>
+        </div>
+        <div class="edu-node"></div>
+        <div class="edu-right">
+          <div class="rdr-card rdr-card--corner p-8">
+            <div class="edu-header">
+              <span class="edu-emoji"><i class="fa-solid fa-graduation-cap"></i></span>
+              <div>
+                <h3 class="edu-college">Erode Sengunthar Engineering College</h3>
+                <p class="edu-degree">Bachelor of Information Technology</p>
+              </div>
+            </div>
+            <div class="rdr-divider"><span>&#10022;</span></div>
+            <div class="edu-stats">
+              <div class="edu-stat"><p class="edu-stat-val">B.Tech</p><p class="edu-stat-label">Degree</p></div>
+              <div class="edu-stat"><p class="edu-stat-val">IT</p><p class="edu-stat-label">Specialization</p></div>
+            </div>
+            <div class="edu-courses">
+              <p class="courses-label">Relevant Coursework</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Web Technologies</span>
+                <span class="tech-tag">Database Management</span>
+                <span class="tech-tag">Computer Networks</span>
+                <span class="tech-tag">Artificial Intelligence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates" class="section section--dark">
+    <div class="section-bg-texture"><img src="assets/rdr2_wanted_texture.jpg" alt="" /></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">&#8212; Battle Honors &#8212;</p>
+        <h2 class="section-title">Courses &amp; Certificates</h2>
+        <div class="rdr-divider short"><span>&#10022;</span></div>
+      </div>
+      <div class="certs-grid">
+        <div class="rdr-card cert-card reveal" id="cert-se">
+          <div class="cert-icon"><i class="fa-solid fa-gears"></i></div>
+          <h4 class="cert-title">Software Engineering</h4>
+          <div class="rdr-divider"><span>&#10022;</span></div>
+          <p class="cert-desc">Core engineering principles and SDLC methodologies</p>
+        </div>
+        <div class="rdr-card cert-card reveal delay-1" id="cert-gdg">
+          <div class="cert-icon"><i class="fa-solid fa-trophy"></i></div>
+          <h4 class="cert-title">Google Developer Groups</h4>
+          <div class="rdr-divider"><span>&#10022;</span></div>
+          <p class="cert-desc">Hackathon Certification &#8212; GDG on Campus</p>
+        </div>
+        <div class="rdr-card cert-card reveal delay-2" id="cert-sql">
+          <div class="cert-icon"><i class="fa-solid fa-chart-bar"></i></div>
+          <h4 class="cert-title">SQL Data Analytics</h4>
+          <div class="rdr-divider"><span>&#10022;</span></div>
+          <p class="cert-desc">80% with Distinction &#8212; TN Computer Institution</p>
+        </div>
+        <div class="rdr-card cert-card reveal delay-3" id="cert-docker">
+          <div class="cert-icon"><i class="fa-brands fa-docker"></i></div>
+          <h4 class="cert-title">Basics of Docker</h4>
+          <div class="rdr-divider"><span>&#10022;</span></div>
+          <p class="cert-desc">Containerization and DevOps fundamentals</p>
+        </div>
+        <div class="rdr-card cert-card reveal delay-4" id="cert-azure">
+          <div class="cert-icon"><i class="fa-solid fa-cloud"></i></div>
+          <h4 class="cert-title">Azure Services</h4>
+          <div class="rdr-divider"><span>&#10022;</span></div>
+          <p class="cert-desc">Microsoft Azure cloud platform fundamentals</p>
+        </div>
+        <div class="rdr-card cert-card reveal delay-5" id="cert-genai">
+          <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+          <h4 class="cert-title">Generative AI</h4>
+          <div class="rdr-divider"><span>&#10022;</span></div>
+          <p class="cert-desc">35+ Skill Badges &#8212; Google Qwiklabs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME DOWNLOAD -->
+  <section id="resume-section" class="section section--blood">
+    <div class="container">
+      <div class="resume-download reveal">
+        <div class="wanted-poster resume-poster">
+          <p class="poster-sub">&#8212; Official Document &#8212;</p>
+          <h2 class="resume-heading">RESUME</h2>
+          <div class="rdr-divider" style="max-width:200px;margin:12px auto"><span style="color:#7a2020">&#10022;</span></div>
+          <p class="resume-text">The complete frontier record of <strong>Siva Balaji S</strong></p>
+          <p class="resume-subtext">Skills &middot; Projects &middot; Education &middot; Certificates</p>
+          <a href="resume/Siva_Balaji_S_Resume.pdf" download id="main-download-btn" class="resume-download-btn"><i class="fa-solid fa-file-arrow-down"></i> &nbsp;Download Resume</a>
+          <p class="resume-note">PDF Format &middot; Always Up To Date</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">&#8212; Send a Telegram &#8212;</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="rdr-divider short"><span>&#10022;</span></div>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="rdr-card rdr-card--corner p-8 h-full">
+            <h3 class="card-label"><i class="fa-solid fa-address-book"></i> Contact Details</h3>
+            <div class="contact-links">
+              <a href="mailto:sivathetechie24@gmail.com" id="contact-email" class="contact-item">
+                <span class="contact-item-icon"><i class="fa-solid fa-envelope"></i></span>
+                <div><p class="contact-item-label">Email</p><p class="contact-item-val">sivathetechie24@gmail.com</p></div>
+              </a>
+              <a href="tel:+917904538655" id="contact-phone" class="contact-item">
+                <span class="contact-item-icon"><i class="fa-solid fa-phone"></i></span>
+                <div><p class="contact-item-label">Phone</p><p class="contact-item-val">+91 7904538655</p></div>
+              </a>
+              <a href="https://linkedin.com/in/sivabalajison" target="_blank" id="contact-linkedin" class="contact-item">
+                <span class="contact-item-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                <div><p class="contact-item-label">LinkedIn</p><p class="contact-item-val">linkedin.com/in/sivabalajison</p></div>
+              </a>
+              <a href="https://github.com/sivabalaiji-tn" target="_blank" id="contact-github" class="contact-item">
+                <span class="contact-item-icon"><i class="fa-brands fa-github"></i></span>
+                <div><p class="contact-item-label">GitHub</p><p class="contact-item-val">github.com/sivabalaiji-tn</p></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="reveal delay-1">
+          <div class="rdr-card rdr-card--corner p-8">
+            <h3 class="card-label"><i class="fa-solid fa-pen-nib"></i> Send a Message</h3>
+            <form id="contactForm" class="contact-form" onsubmit="handleContactForm(event)">
+              <div class="form-group">
+                <label for="cname" class="form-label">Your Name</label>
+                <input id="cname" type="text" placeholder="John Marston" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label for="cemail" class="form-label">Email Address</label>
+                <input id="cemail" type="email" placeholder="john@frontier.com" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label for="cmsg" class="form-label">Message</label>
+                <textarea id="cmsg" rows="4" placeholder="Your message from the frontier..." class="form-input form-textarea"></textarea>
+              </div>
+              <button type="submit" id="contact-submit" class="rdr-btn w-full"><span><i class="fa-solid fa-paper-plane"></i> Send Message</span></button>
+              <p id="formSuccess" class="form-success hidden">&#10022; Message Received, Rider! &#10022;</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container text-center">
+      <p class="footer-name">&#10022; SIVA BALAJI S &#10022;</p>
+      <p class="footer-quote">"Every great journey begins with a single line of code."</p>
+      <div class="rdr-divider" style="max-width:300px;margin:12px auto"><span>&#10022;</span></div>
+      <div class="footer-links">
+        <a href="mailto:sivathetechie24@gmail.com" id="footer-email"><i class="fa-solid fa-envelope"></i> Email</a>
+        <span>|</span>
+        <a href="https://linkedin.com/in/sivabalajison" target="_blank" id="footer-linkedin"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+        <span>|</span>
+        <a href="https://github.com/sivabalaiji-tn" target="_blank" id="footer-github"><i class="fa-brands fa-github"></i> GitHub</a>
+        <span>|</span>
+        <a href="resume/Siva_Balaji_S_Resume.pdf" download id="footer-resume"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Siva Balaji S &mdash; All Rights Reserved &middot; Vadugapatti, Theni</p>
+      <p class="footer-inspo">Inspired by Red Dead Redemption 2 &mdash; Rockstar Games</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
